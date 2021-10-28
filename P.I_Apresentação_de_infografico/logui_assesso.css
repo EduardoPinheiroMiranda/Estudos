@@ -1,0 +1,10 @@
+section#setor{
+        background-color: rgb(10, 233, 185);
+        padding: 50px;
+        text-align: center;
+        margin: auto;
+}
+input{
+    margin-top: 10px;
+    border-radius: 3px;
+}
