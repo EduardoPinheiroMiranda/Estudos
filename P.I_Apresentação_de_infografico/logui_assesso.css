@@ -1,8 +1,16 @@
+
+body{
+    background-color: rgb(170, 153, 127);
+}
 section#setor{
-        background-color: rgb(10, 233, 185);
+        background-color: rgb(96, 223, 195);
         padding: 50px;
         text-align: center;
-        margin: auto;
+        margin:auto;
+        width: 200px;
+        border-radius: 10px;
+        
+
 }
 input{
     margin-top: 10px;
