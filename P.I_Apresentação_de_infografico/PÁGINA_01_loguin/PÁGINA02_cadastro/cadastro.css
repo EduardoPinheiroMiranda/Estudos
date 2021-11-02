@@ -1,19 +1,59 @@
-section{
-    text-align: center;
-    background-color: rgb(97, 97, 211);
-    width: 200px;
-    padding: 5px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px;
-    justify-content: center;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.781),rgba(255, 166, 0, 0.692))
+
+
+}
+fieldset{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.747);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 20px;
+    border: 0;
+    box-shadow: -15px 15px 15px  rgb(0, 0, 0);
+
 }
-input{
-    margin-top: 3px;
-    
-    
-    
+legend{
+    color: black;
+    text-align: center;
+    background-image: linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 166, 0));
+    border-radius: 5px;
+}
+.inf_entrada{
+    color:white;
+    margin-top: 4px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.445);
+    outline: none;
+    width: 100%;
+}
+#data{
+    font-size: 14pt;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    width: 100%;
+    color: white;
+
+}
+hr{
+    width: 50%;
+    margin-top: 30px;
+}
+div#usuario{
+    margin-top: 30px;
+}
+
+button{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.781),rgba(255, 166, 0, 0.692))
+   
+
 }
