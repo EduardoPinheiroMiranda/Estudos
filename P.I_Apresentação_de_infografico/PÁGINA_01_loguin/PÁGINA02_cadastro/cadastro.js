@@ -1,6 +1,6 @@
 let senha = document.querySelector('#ver_senha')
     senha.addEventListener('click', ()=>{//arrow functiun
-        let novasenha = document.querySelector('#senha')
+        let novasenha = document.querySelector('#input_senha')
             if(novasenha.getAttribute('type')=='password'){
                 novasenha.setAttribute('type','text')
             }else{
@@ -65,12 +65,7 @@ user_name.addEventListener('keyup', ()=>{
     }
 })
 
-input_senha.addEventListener('keyp', ()=>{
-    if(input_senha.value.length < 10){
-        psenha.setAttribute('style','color:red')
-        psenha.innerHTML='minimo de carecters => 10'
-    }
-})
+
 
 function confirmar(){
 
