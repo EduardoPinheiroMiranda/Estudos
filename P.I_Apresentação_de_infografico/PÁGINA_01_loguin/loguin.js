@@ -1,11 +1,10 @@
-let usuario = document.getElementById('usuario')
-let senha = document.getElementeById('senha')
-let alerta = document.getElementById('alerta')
-
-function confirmar(){
-    if(senha.value == "1234"){
-        alert("certo")
-    }else{
-        alert("errado")
-    }
-}
+let olho = document.querySelector('.fa-eye')
+    olho.addEventListener('click', ()=>{//arrow functiun
+        let novasenha = document.querySelector('#senha')
+            if(novasenha.getAttribute('type')=='password'){
+                novasenha.setAttribute('type','text')
+            }else{
+                novasenha.setAttribute('type', 'password')
+            }
+    })
+/*---------------------------olho------------------------------*/ 

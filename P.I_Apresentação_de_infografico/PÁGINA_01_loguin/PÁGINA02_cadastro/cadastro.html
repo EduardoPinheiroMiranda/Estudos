@@ -6,42 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project PI</title>
         <link rel="stylesheet" href="cadastro.css">
+
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <fieldset>
         <legend ><strong>Cadastro</strong></legend>
         <div >
-            <p>Nome completo: <br>
-                <input class="inf_entrada" type="text">
+            <p id="pnome">Nome completo: <br>
+                <input id="nome" class="inf_entrada" type="text" required>
             </p>
         </div>
 
         <div>
-            <p>E-mail:<br>
-                <input class="inf_entrada" type="email">
+            <p id="pemail">E-mail:<br>
+                <input id="email" class="inf_entrada" type="email" required>
             </p>
         </div>
 
         <div >
-            <p>Data Nascimento:
-                <input id="data" type="date">
+            <p id="pdata">Data Nascimento:
+                <input id="data" type="date" required>
             </p>
         </div>
         <hr>
-        <div id="usuario">
-            <p>Nome de usuario: <br>
-                <input class="inf_entrada" type="text">
+        <div id="pusuario">
+            <p id="user">Nome de usuario: <br>
+                <input id="user_name"class="inf_entrada" type="text" required>
             </p>
         </div>
 
         <div>
-            <P>Senha: <br>
-                <input class="inf_entrada" type="password">
+            <P id="psenha">Senha: <br>
+                <input id="inpt_senha" class="inf_entrada"  type="password" required>
+                <i id="ver_senha" class="fa fa-eye" aria-hidden="true"></i>
             </P>
+        </div>
+        <div>
+            <p id="pconfirmar_senha">Confirmar Senha: <br>
+                <input id="conf_senha" class="inf_entrada"  type="password" required>
+                <i id="ver_conf_senha" class="fa fa-eye" aria-hidden="true"></i>
+            </p>
         </div>
 
         <Div >
-            <button>Confirmar</button>
+                <button onclick="confirmar()">Confirmar</button>
         </Div>
 
     </fieldset>
