@@ -26,46 +26,72 @@ let user_name = document.querySelector("#user_name")
 let input_senha = document.getElementById("input_senha")
 let conf_senha = document.querySelector("#conf_senha")
 
-let pnome = document.getElementById("pnome")
-let pemail = document.querySelector("#pemail")
-let pdata = document.querySelector("#pdata")
-let pusuario = document.querySelector("#pusuario")
-let psenha = document.querySelector("#psenha")
-let pconfirmar_senha = document.querySelector("#pconfirmar_senha")
+let alerta_nome = document.querySelector("#alerta_nome")
+let alerta_email = document.querySelector("#alerta_email")
+let alerta_data = document.querySelector("#alerta_data")
+let alerta_user = document.querySelector("#alerta_user")
+let alerta_senha = document.querySelector("#alerta_senha")
+let alerta_conf_senha =document.querySelector("#alerta_conf_senha")
 
 nome.addEventListener('keyup', ()=>{
     if(nome.value.length <10){
-        pnome.setAttribute('style','color: red')
+        alerta_nome.setAttribute('style','color: red')
+        alerta_nome.innerHTML = `*Nome incompleto`
     }else{
-        pnome.setAttribute('style','color:white')
+        alerta_nome.setAttribute('style','color:white')
+        alerta_nome.innerHTML=''
     }
 })
 
 email.addEventListener('keyup', ()=>{
     if(email.value.length <= 5 || email.value.indexOf('@') == -1){
-        pemail.setAttribute('style','color:red')
+        alerta_email.setAttribute('style','color:red')
+        alerta_email.innerHTML = 'e-mail invalido'
     }else{
-        pemail.setAttribute('style','color: white')
+        alerta_email.setAttribute('style','color: white')
+        alerta_email.innerHTML = ''
     }
 })
 
 data.addEventListener('keyup', ()=>{
     if(data.value <10000000){
-        pdata.setAttribute('style', 'color:red')
+        alerta_data.setAttribute('style', 'color:red')
+        alerta_data.innerHTML = 'data invalida'
     }else{
-        pdata.setAttribute('style','color:white')
+        alerta_data.setAttribute('style','color:white')
+        alerta_data.innerHTML = ''
     }
 })
 
 user_name.addEventListener('keyup', ()=>{
     if(user_name.value.length < 5){
-        pusuario.setAttribute('style','color:red')
+        alerta_user.setAttribute('style','color:red')
+        alerta_user.innerHTML = 'o minimo de caracteres é 5'
     }else{
-        pusuario.setAttribute('style','color: white')
+        alerta_user.setAttribute('style','color: white')
+        alerta_user.innerHTML = ''
     }
 })
 
+input_senha.addEventListener('keyup', ()=>{
+    if(input_senha.value.length < 8){
+        alerta_senha.setAttribute('style', 'color:red')
+        alerta_senha.innerHTML = 'o minimo de caracteres é 8'
+    }else{
+        alerta_senha.setAttribute('style','color:white')
+        alerta_senha.innerHTML = ''
+    }
+})
 
+conf_senha.addEventListener('keyup', ()=>{
+    if(conf_senha.value != input_senha.value){
+        alerta_conf_senha.setAttribute('style','color: red')
+        alerta_conf_senha.innerHTML = 'essa senha está diferênta da anterior'
+    }else{
+        alerta_conf_senha.setAttribute('style','color: white')
+        alerta_conf_senha.innerHTML = ''
+    }
+})
 
 function confirmar(){
 

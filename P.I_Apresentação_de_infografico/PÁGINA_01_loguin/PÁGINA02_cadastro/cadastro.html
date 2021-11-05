@@ -13,39 +13,45 @@
     <fieldset>
         <legend ><strong>Cadastro</strong></legend>
         <div >
-            <p id="pnome">Nome completo: <br>
+            <p>Nome completo: <br>
                 <input id="nome" class="inf_entrada" type="text" required>
+                <div id="alerta_nome" class="aviso_erro"></div>
             </p>
         </div>
 
         <div>
-            <p id="pemail">E-mail:<br>
+            <p>E-mail:<br>
                 <input id="email" class="inf_entrada" type="email" required>
+                <div id="alerta_email" class="aviso_erro"></div>
             </p>
         </div>
 
         <div >
-            <p id="pdata">Data Nascimento:
+            <p>Data Nascimento:
                 <input id="data" type="date" required>
+                <div id="alerta_data" class="aviso_erro"></div>
             </p>
         </div>
         <hr>
-        <div id="pusuario">
-            <p id="user">Nome de usuario: <br>
+        <div>
+            <p>Nome de usuario: <br>
                 <input id="user_name"class="inf_entrada" type="text" required>
+                <div id="alerta_user" class="aviso_erro"></div>
             </p>
         </div>
 
         <div>
-            <P id="psenha">Senha: <br>
+            <P>Senha: <br>
                 <input id="input_senha" class="inf_entrada"  type="password" required>
                 <i id="ver_senha" class="fa fa-eye" aria-hidden="true"></i>
+                <div id="alerta_senha" class="aviso_erro"></div>
             </P>
         </div>
         <div>
-            <p id="pconfirmar_senha">Confirmar Senha: <br>
+            <p>Confirmar Senha: <br>
                 <input id="conf_senha" class="inf_entrada"  type="password" required>
                 <i id="ver_conf_senha" class="fa fa-eye" aria-hidden="true"></i>
+                <div id="alerta_conf_senha" class="aviso_erro"></div>
             </p>
         </div>
 
