@@ -33,13 +33,22 @@ let alerta_user = document.querySelector("#alerta_user")
 let alerta_senha = document.querySelector("#alerta_senha")
 let alerta_conf_senha =document.querySelector("#alerta_conf_senha")
 
+let valida_nome = true
+let valida_email = true
+let valida_data = true
+let valida_user = true
+let valida_senha = true
+let valida_conf_senha = true
+
 nome.addEventListener('keyup', ()=>{
-    if(nome.value.length <10){
+    if(nome.value.length <10 || typeof(nome.value)=='number'){
         alerta_nome.setAttribute('style','color: red')
         alerta_nome.innerHTML = `*Nome incompleto`
+        valida_nome = false
     }else{
         alerta_nome.setAttribute('style','color:white')
         alerta_nome.innerHTML=''
+        valida_nome = true
     }
 })
 
@@ -47,9 +56,11 @@ email.addEventListener('keyup', ()=>{
     if(email.value.length <= 5 || email.value.indexOf('@') == -1){
         alerta_email.setAttribute('style','color:red')
         alerta_email.innerHTML = 'e-mail invalido'
+        valida_email = false
     }else{
         alerta_email.setAttribute('style','color: white')
         alerta_email.innerHTML = ''
+        valida_email = true
     }
 })
 
@@ -57,9 +68,11 @@ data.addEventListener('keyup', ()=>{
     if(data.value <10000000){
         alerta_data.setAttribute('style', 'color:red')
         alerta_data.innerHTML = 'data invalida'
+        validar_data = false
     }else{
         alerta_data.setAttribute('style','color:white')
         alerta_data.innerHTML = ''
+        validar_data = true
     }
 })
 
@@ -67,9 +80,11 @@ user_name.addEventListener('keyup', ()=>{
     if(user_name.value.length < 5){
         alerta_user.setAttribute('style','color:red')
         alerta_user.innerHTML = 'o minimo de caracteres é 5'
+        valida_user = false
     }else{
         alerta_user.setAttribute('style','color: white')
         alerta_user.innerHTML = ''
+        valida_user = true
     }
 })
 
@@ -77,9 +92,11 @@ input_senha.addEventListener('keyup', ()=>{
     if(input_senha.value.length < 8){
         alerta_senha.setAttribute('style', 'color:red')
         alerta_senha.innerHTML = 'o minimo de caracteres é 8'
+        valida_senha = false
     }else{
         alerta_senha.setAttribute('style','color:white')
         alerta_senha.innerHTML = ''
+        valida_senha = true
     }
 })
 
@@ -87,13 +104,35 @@ conf_senha.addEventListener('keyup', ()=>{
     if(conf_senha.value != input_senha.value){
         alerta_conf_senha.setAttribute('style','color: red')
         alerta_conf_senha.innerHTML = 'essa senha está diferênta da anterior'
+        valida_conf_senha = false
     }else{
         alerta_conf_senha.setAttribute('style','color: white')
         alerta_conf_senha.innerHTML = ''
+        valida_conf_senha = true
     }
 })
 
 function confirmar(){
+    if(valida_nome==true&&valida_email==true&&valida_data==true&&valida_user==true&&valida_senha==true&&valida_conf_senha==true){
+        let lista_de_cadastro = JSON.parse(localStorage.getItem('lista_de_cadastro') || '[]')
+
+        lista_de_cadastro.push({
+            nomo_completo: nome.value,
+            Email: email.value,
+            data_nascimento : data.value,
+            nome_usuario: user_name.value,
+            Senha: input_senha.value
+        })
+            localStorage.setItem('lista_de_cadastro', JSON.stringify(lista_de_cadastro))
+            
+                setTimeout(() => {
+                    window.location.href='../PÁGINA_01_loguin/Loguin_assesso.html'
+                },3000)
+                alert("Cadastro realizado com sucesso")
+    }else{
+        alert('Ainda a campos que estão vazios ou não foram preenchidos corretamente ')
+        
+    }
 
 
 }

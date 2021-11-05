@@ -8,3 +8,11 @@ let olho = document.querySelector('.fa-eye')
             }
     })
 /*---------------------------olho------------------------------*/ 
+let alertauser = document.querySelector("#alerta_user")
+let alertasenha = document.querySelector("#alerta_senha")
+
+alerta_user.addEventListener('key', ()=>{
+    if(alertauser){
+        
+    }
+})
