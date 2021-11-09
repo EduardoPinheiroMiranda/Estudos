@@ -1,3 +1,4 @@
+/*---------------------------olho------------------------------*/ 
 let olho = document.querySelector('.fa-eye')
     olho.addEventListener('click', ()=>{//arrow functiun
         let novasenha = document.querySelector('#senha')
@@ -7,7 +8,7 @@ let olho = document.querySelector('.fa-eye')
                 novasenha.setAttribute('type', 'password')
             }
     })
-/*---------------------------olho------------------------------*/ 
+/*---------------------------validação de login------------------------------*/ 
 let alerta = document.querySelector('#alerta')
 let user_valid = document.querySelector('#usuario')
 let senha_valid = document.querySelector('#senha')
@@ -32,11 +33,12 @@ function entrar(){
                 }
             }
         })
-        console.log(uservalidacao)
 
-        if(user_valid.value == uservalidacao.nome_user && senha_valid.value == uservalidacao.senha){
-            window.location.href ="PÁGINA03_materia/apresentar_materia.html"
-        }else{
-            alerta.innerHTML =`*usuario ou senha incorreto, verifique se tudo está certo.`
-        }
+            if(user_valid.value.length == 0 || senha_valid.value.length == 0){
+                alerta.innerHTML =`*usuario ou senha incorreto, verifique se tudo está certo.`
+            }else if(user_valid.value == uservalidacao.nome_user && senha_valid.value == uservalidacao.senha){
+                window.location.href ="PÁGINA03_materia/apresentar_materia.html"
+            }else{
+                alerta.innerHTML =`*usuario ou senha incorreto, verifique se tudo está certo.`
+            }
 }
