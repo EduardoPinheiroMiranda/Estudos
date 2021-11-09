@@ -33,7 +33,7 @@ input{
 }
 button{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 30px;
     cursor: pointer;
     border-radius: 10px;
     padding: 5px;
@@ -47,4 +47,9 @@ a{
     right: 10px;
     margin-top: -30px;
     cursor: pointer;
+}
+#alerta{
+    color: red;
+    font-size: 10pt;
+    margin-top: 30px;
 }

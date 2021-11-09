@@ -69,11 +69,11 @@ data.addEventListener('keyup', ()=>{
     if(data.value <10000000){
         alerta_data.setAttribute('style', 'color:red')
         alerta_data.innerHTML = 'data invalida'
-        validar_data = 'false'
+        valida_data = 'false'
     }else{
         alerta_data.setAttribute('style','color:white')
         alerta_data.innerHTML = ''
-        validar_data = 'true'
+        valida_data = 'true'
     }
 })
 
@@ -127,7 +127,7 @@ function confirmar(){
             localStorage.setItem('lista_de_cadastro', JSON.stringify(lista_de_cadastro))
 
                 setTimeout(() => {
-                    window.location.href="../login_Assesso.html"
+                    window.location.href="http://127.0.0.1:5500/REPOSITORIO%20DE%20CODIGOS/Estudos/P.I_Apresenta%C3%A7%C3%A3o_de_infografico/P%C3%81GINA_01_loguin/Login_Assesso.html"
                 },3000)
         alert("Cadastro realizado com sucesso")
     }else{
