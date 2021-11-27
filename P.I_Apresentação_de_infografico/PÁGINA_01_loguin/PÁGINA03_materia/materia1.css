@@ -1,3 +1,42 @@
+/*-------------------cores------------------*/
 p{
     display:inline;
+}
+body{
+    background-color: rgb(44, 41, 41);
+    font-size: 14pt;
+}
+.orange{
+    color: rgb(185, 120, 22);
+}
+.white{
+    color: white;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: rgb(139, 139, 248);
+}
+.laranja{
+    color: rgba(255, 136, 0, 0.932)
+}
+.green{
+    color: green
+}
+/*---------------- estilo--------------------*/
+h1{
+    text-align: center;
+}
+#bibliotecas{
+    margin-left: 20px;
+}
+#print1{
+    margin-left: 60px;
+}
+#print2{
+    margin-left: 60px;
+}
+#comentarios{
+    margin-left: 100px;
 }
