@@ -5,6 +5,7 @@ p{
 body{
     background-color: rgb(44, 41, 41);
     font-size: 14pt;
+    padding: 100px;
 }
 .orange{
     color: rgb(185, 120, 22);
@@ -39,4 +40,39 @@ h1{
 }
 #comentarios{
     margin-left: 100px;
+    margin-top: 20px;
+}
+#switch{
+    margin-left: -40px;
+}
+#switchcase{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#print3{
+    margin-left: 40px;
+}
+#print4{
+    margin-left: 40px;
+}
+#comit3{
+    margin-left: 80px;
+}
+#print5{
+    margin-left: 40px;
+}
+#sessão{
+    margin-left: 40px;
+    padding: auto;
+}
+#fecharcodig{
+    text-align: center;
+}
+#botao{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#proximo{
+    margin-left: 50px;
 }
