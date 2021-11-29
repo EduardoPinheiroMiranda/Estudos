@@ -4,8 +4,8 @@ p{
 }
 body{
     background-color: rgb(44, 41, 41);
-    font-size: 14pt;
-    padding: 100px;
+    font-size: 18pt;
+    padding: auto;
 }
 .orange{
     color: rgb(185, 120, 22);
