@@ -3,8 +3,11 @@ body{
     background-color: gray;   
     padding: 50px;
 }
-
-.giphy-embed{
-    margin-top: -1030px;
-    margin-left: 90px;
+#gif{
+    margin-top: -873px;
+    margin-left: 400px;
+}
+#botoes{
+    margin-top: 800px;
+    margin-left: 50px;
 }
