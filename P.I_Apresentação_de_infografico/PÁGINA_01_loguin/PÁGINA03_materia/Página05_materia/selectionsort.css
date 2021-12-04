@@ -14,10 +14,13 @@ body{
 }
 #botoes{
     margin-top: 1160px;
-}
-button{
-    text-align: center;
-    border-radius: 10px;
-    border: none;
+}button{
     margin-left: 20px;
+    border: none;
+    height: 25px;
+    width: 70px;
+    border-radius: 5px;
+}
+a{
+    color: black;
 }
