@@ -1,4 +1,4 @@
-/*-------------------cores------------------*/
+/*-------------------cores------------------
 p{
     display:inline;
 }
@@ -25,7 +25,7 @@ body{
 .green{
     color: green
 }
-/*---------------- estilo--------------------*/
+/*---------------- estilo--------------------
 h1{
     text-align: center;
 }
@@ -75,4 +75,21 @@ h1{
 
 #proximo{
     margin-left: 50px;
+}*/
+body{
+    text-align: center;
+    background-color: rgb(59, 59, 59);
+}
+#botoes{
+    margin-top: 20px;
+}
+button{
+    margin-left: 20px;
+    border: none;
+    height: 25px;
+    width: 70px;
+    border-radius: 5px;
+}
+a{
+    color: black;
 }
