@@ -12,6 +12,8 @@ let olho = document.querySelector('.fa-eye')
 let alerta = document.querySelector('#alerta')
 let user_valid = document.querySelector('#usuario')
 let senha_valid = document.querySelector('#senha')
+let adim_user = 'adim'
+let adim_senha = 'adim'
 
 
 function entrar(){
@@ -36,6 +38,8 @@ function entrar(){
 
             if(user_valid.value.length == 0 || senha_valid.value.length == 0){
                 alerta.innerHTML =`*usuario ou senha incorreto, verifique se tudo está certo.`
+            }else if(user_valid.value==adim_user && senha_valid.value==adim_senha){
+                window.location.href ="PÁGINA03_materia/INTRODUÇÃO/sumario.html"
             }else if(user_valid.value == uservalidacao.nome_user && senha_valid.value == uservalidacao.senha){
                 window.location.href ="PÁGINA03_materia/INTRODUÇÃO/sumario.html"
             }else{
