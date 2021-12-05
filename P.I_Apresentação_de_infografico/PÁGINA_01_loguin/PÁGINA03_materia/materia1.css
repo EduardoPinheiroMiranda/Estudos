@@ -1,84 +1,18 @@
-/*-------------------cores------------------
-p{
-    display:inline;
-}
-body{
-    background-color: rgb(44, 41, 41);
-    font-size: 18pt;
-    padding: auto;
-}
-.orange{
-    color: rgb(185, 120, 22);
-}
-.white{
-    color: white;
-}
-.red{
-    color: red;
-}
-.blue{
-    color: rgb(139, 139, 248);
-}
-.laranja{
-    color: rgba(255, 136, 0, 0.932)
-}
-.green{
-    color: green
-}
-/*---------------- estilo--------------------
-h1{
-    text-align: center;
-}
-#bibliotecas{
-    margin-left: 20px;
-}
-#print1{
-    margin-left: 60px;
-}
-#print2{
-    margin-left: 60px;
-}
-#comentarios{
-    margin-left: 100px;
-    margin-top: 20px;
-}
-#switch{
-    margin-left: -40px;
-}
-#switchcase{
-    margin-left: 100px;
-    margin-top: 20px;
-}
-#print3{
-    margin-left: 40px;
-}
-#print4{
-    margin-left: 40px;
-}
-#comit3{
-    margin-left: 80px;
-}
-#print5{
-    margin-left: 40px;
-}
-#sessão{
-    margin-left: 40px;
-    padding: auto;
-}
-#fecharcodig{
-    text-align: center;
-}
-#botao{
-    text-align: center;
-    margin-top: 50px;
-}
 
-#proximo{
-    margin-left: 50px;
-}*/
 body{
     text-align: center;
     background-color: rgb(59, 59, 59);
+    padding: 50px;
+}
+#corpo{
+    background-color: rgb(51, 50, 50);
+    box-shadow: 5px 5px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
 }
 #botoes{
     margin-top: 20px;
@@ -89,6 +23,7 @@ button{
     height: 25px;
     width: 70px;
     border-radius: 5px;
+    background-color: rgb(209, 206, 206);
 }
 a{
     color: black;
