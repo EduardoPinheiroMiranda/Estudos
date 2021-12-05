@@ -1,6 +1,6 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.781),rgba(255, 166, 0, 0.692))
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: linear-gradient( 90deg, rgb(1, 1, 197), rgb(255, 250, 250));
 
 
 }
@@ -10,6 +10,9 @@ fieldset{
     position: absolute;
     top: 50%;
     left: 50%;
+    min-width: 250px;
+    max-width: 800px;
+    margin: auto;
     transform: translate(-50%,-50%);
     border-radius: 15px;
     padding: 20px;
@@ -19,9 +22,9 @@ fieldset{
 
 }
 legend{
-    color: black;
+    color: white;
     text-align: center;
-    background-image: linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 166, 0));
+    background-color: RGB(1,1,197);
     border-radius: 5px;
 }
 .inf_entrada{
@@ -55,7 +58,9 @@ button{
     width: 100%;
     cursor: pointer;
     border-radius: 10px;
-    padding: 5px;background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.781),rgba(255, 166, 0, 0.692))
+    padding: 5px;
+    background-color: RGB(1,1,197);
+    color: white;
 
 }
 .fa-eye{
